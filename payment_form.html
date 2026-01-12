@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <form action="" method="get">
+           <h1 class="main-heading">Payment Form</h1>
+           <hr>
+            <h2>Contact Information</h2>
+            <p>Requird fields are followed by *</p>
+            <p>Name:* 
+                <input type="text" required name="name" placeholder="Oyshi Sarkar" ></p>
+            </p>
+            <p>
+              <fieldset>
+                <legend>Gender</legend>
+              Male <input type="radio" name="gender" id="Male" >
+              Female <input type="radio" name="gender" id="Female">
+            </fieldset>
+            </p>
+            <p>
+                Address: 
+                <textarea placeholder="Enter your Address" name="address"
+              id="address" cols="100" rows="8" ></textarea></p>
+            </p>
+            <p>
+                Email:* 
+                <input type="email" id="email" required placeholder="oyshi@gmail.com"></p>
+            <p>
+                Pincode:*
+                 <input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+            </p>
+                 <h4>Payment Information</h4>
+            <p>Card Type:*
+              <select name="card_type" id="card_type" required> 
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupey">Rupey</option>
+                <option value="mastercard">Mastercard</option>  
+              </select>
+              </p>
+              <p>
+                Card Number <input type="number" name="card_number" id="card_number">
+              </p>
+            <p>
+              <label for="exp_date">Expiration Date:</label>
+              <input type="date" name="exp_date" id="exp_date">
+            </p>
+
+            <p>CVV <input type="password" name="cvv" id="cvv"></p>
+            <input type="submit" value="Pay now">
+          </form>
+          </div>
+      </body>
+</html>
+
